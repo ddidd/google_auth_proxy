@@ -27,6 +27,7 @@ var (
 	cookieSecure            = flag.Bool("cookie-secure", false, "HTTPS only cookie")
 	authenticatedEmailsFile = flag.String("authenticated-emails-file", "", "authenticate against emails via file (one per line)")
 	googleAppsDomains       = StringArray{}
+	templatePath            = flag.String("template-path", "", "directory containing sign_in.html and error.html")
 	upstreams               = StringArray{}
 )
 
